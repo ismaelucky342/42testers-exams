@@ -1,5 +1,0 @@
-{
-    "python.analysis.extraPaths": [
-        "./push_swap_tester"
-    ]
-}
