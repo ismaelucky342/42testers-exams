@@ -1,0 +1,324 @@
+----------------8<-------------[ START TEST 
+        💻 ALL TESTS: 
+
+ulimit -n 30
+
+./a.out /bin/ls
+./a.out /bin/ls microshell.c
+./a.out /bin/ls salut
+./a.out ";"
+./a.out ";" ";" ";" ";" ";" ";" ";" ";" ";" ";" ";" ";" ";" ";" ";" ";" ";" ";" ";" ";" ";" ";" ";"
+./a.out ";" ";" /bin/echo OK
+./a.out ";" ";" /bin/echo OK ";"
+./a.out ";" ";" /bin/echo OK ";" ";"
+./a.out ";" ";" /bin/echo OK ";" ";" ";" /bin/echo OK
+./a.out /bin/ls "|" /usr/bin/grep a.out
+./a.out /bin/ls "|" /usr/bin/grep microshell "|" /usr/bin/grep micro
+./a.out /bin/ls "|" /usr/bin/grep microshell "|" /usr/bin/grep micro "|" /usr/bin/grep shell "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro
+./a.out /bin/ls "|" /usr/bin/grep microshell "|" /usr/bin/grep micro "|" /usr/bin/grep shell "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep shell "|" /usr/bin/grep shell "|" /usr/bin/grep shell "|" /usr/bin/grep shell "|" /usr/bin/grep shell "|" /usr/bin/grep shell "|" /usr/bin/grep shell "|" /usr/bin/grep shell "|" /usr/bin/grep shell "|" /usr/bin/grep shell "|" /usr/bin/grep shell "|" /usr/bin/grep shell "|" /usr/bin/grep shell "|" /usr/bin/grep shell "|" /usr/bin/grep shell "|" /usr/bin/grep shell "|" /usr/bin/grep shell "|" /usr/bin/grep shell "|" /usr/bin/grep shell "|" /usr/bin/grep shell "|" /usr/bin/grep shell "|" /usr/bin/grep shell "|" /usr/bin/grep shell "|" /usr/bin/grep shell "|" /usr/bin/grep shell "|" /usr/bin/grep shell "|" /usr/bin/grep shell "|" /usr/bin/grep shell "|" /usr/bin/grep shell "|" /usr/bin/grep shell "|" /usr/bin/grep shell "|" /usr/bin/grep shell "|" /usr/bin/grep shell "|" /usr/bin/grep shell "|" /usr/bin/grep shell "|" /usr/bin/grep shell "|" /usr/bin/grep shell "|" /usr/bin/grep shell "|" /usr/bin/grep shell
+./a.out /bin/ls ewqew "|" /usr/bin/grep micro "|" /bin/cat -n ";" /bin/echo dernier ";" /bin/echo
+./a.out /bin/ls "|" /usr/bin/grep micro "|" /bin/cat -n ";" /bin/echo dernier ";" /bin/echo ftest ";"
+./a.out /bin/echo ftest ";" /bin/echo ftewerwerwerst ";" /bin/echo werwerwer ";" /bin/echo qweqweqweqew ";" /bin/echo qwewqeqrtregrfyukui ";"
+./a.out /bin/ls ftest ";" /bin/ls ";" /bin/ls werwer ";" /bin/ls microshell.c ";" /bin/ls subject.fr.txt ";"
+./a.out /bin/ls "|" /usr/bin/grep micro ";" /bin/ls "|" /usr/bin/grep micro ";" /bin/ls "|" /usr/bin/grep micro ";" /bin/ls "|" /usr/bin/grep micro ";"
+./a.out /bin/cat reserv_microsh.c "|" /usr/bin/grep a "|" /usr/bin/grep b ";" /bin/cat reserv_microsh.c ";"
+./a.out /bin/cat reserv_microsh.c "|" /usr/bin/grep a "|" /usr/bin/grep w ";" /bin/cat reserv_microsh.c ";"
+./a.out /bin/cat reserv_microsh.c "|" /usr/bin/grep a "|" /usr/bin/grep w ";" /bin/cat reserv_microsh.c
+./a.out /bin/cat reserv_microsh.c ";" /bin/cat reserv_microsh.c "|" /usr/bin/grep a "|" /usr/bin/grep b "|" /usr/bin/grep z ";" /bin/cat reserv_microsh.c
+./a.out ";" /bin/cat reserv_microsh.c ";" /bin/cat reserv_microsh.c "|" /usr/bin/grep a "|" /usr/bin/grep b "|" /usr/bin/grep z ";" /bin/cat reserv_microsh.c
+./a.out blah "|" /bin/echo OK
+./a.out blah "|" /bin/echo OK ";"
+./a.out ";" ";" ";" ";" ";" ";" ";" ";" ";" ";" ";" ";" ";" ";" ";" ";" ";" ";" ";" ";" ";" blah "|" /bin/echo OK ";" ";" ";" ";" ";" ";" ";" ";" ";" ";" ";" ";" ";" ";" ";" ";" ";" ";" ";" ";" ";"
+./a.out cd ";" /bin/ls
+./a.out /bin/ls "|" /usr/bin/grep microshell "|" /usr/bin/grep micro "|" /usr/bin/grep shell "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|" /usr/bin/grep micro "|"
+
+
+        🔎 YOUR OUTPUT:
+a.out
+finalexam
+microshell
+sourcexam
+test.sh
+/bin/ls: cannot access 'microshell.c': No such file or directory
+/bin/ls: cannot access 'salut': No such file or directory
+OK
+OK
+OK
+OK
+OK
+a.out
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/bin/ls: cannot access 'ewqew': No such file or directory
+/usr/bin/grep: (standard input): Bad file descriptor
+dernier
+
+/usr/bin/grep: (standard input): Bad file descriptor
+dernier
+ftest
+ftest
+ftewerwerwerst
+werwerwer
+qweqweqweqew
+qwewqeqrtregrfyukui
+/bin/ls: cannot access 'ftest': No such file or directory
+a.out
+finalexam
+microshell
+sourcexam
+test.sh
+/bin/ls: cannot access 'werwer': No such file or directory
+/bin/ls: cannot access 'microshell.c': No such file or directory
+/bin/ls: cannot access 'subject.fr.txt': No such file or directory
+microshell
+microshell
+microshell
+microshell
+/bin/cat: reserv_microsh.c: No such file or directory
+/usr/bin/grep: (standard input): Bad file descriptor
+/bin/cat: reserv_microsh.c: No such file or directory
+/bin/cat: reserv_microsh.c: No such file or directory
+/usr/bin/grep: (standard input): Bad file descriptor
+/bin/cat: reserv_microsh.c: No such file or directory
+/bin/cat: reserv_microsh.c: No such file or directory
+/usr/bin/grep: (standard input): Bad file descriptor
+/bin/cat: reserv_microsh.c: No such file or directory
+/bin/cat: reserv_microsh.c: No such file or directory
+/bin/cat: reserv_microsh.c: No such file or directory
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/bin/cat: reserv_microsh.c: No such file or directory
+/bin/cat: reserv_microsh.c: No such file or directory
+/bin/cat: reserv_microsh.c: No such file or directory
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/bin/cat: reserv_microsh.c: No such file or directory
+error: cannot execute blah
+error: fatal
+OK
+error: cannot execute blah
+error: fatal
+OK
+error: cannot execute blah
+error: fatal
+OK
+error: cd: bad arguments
+a.out
+finalexam
+microshell
+sourcexam
+test.sh
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+/usr/bin/grep: (standard input): Bad file descriptor
+
+
+        🗝 EXPECTED OUTPUT:
+a.out
+finalexam
+microshell
+sourcexam
+test.sh
+/bin/ls: cannot access 'microshell.c': No such file or directory
+/bin/ls: cannot access 'salut': No such file or directory
+OK
+OK
+OK
+OK
+OK
+a.out
+microshell
+microshell
+microshell
+/bin/ls: cannot access 'ewqew': No such file or directory
+dernier
+
+     1	microshell
+dernier
+ftest
+ftest
+ftewerwerwerst
+werwerwer
+qweqweqweqew
+qwewqeqrtregrfyukui
+/bin/ls: cannot access 'ftest': No such file or directory
+a.out
+finalexam
+microshell
+sourcexam
+test.sh
+/bin/ls: cannot access 'werwer': No such file or directory
+/bin/ls: cannot access 'microshell.c': No such file or directory
+/bin/ls: cannot access 'subject.fr.txt': No such file or directory
+microshell
+microshell
+microshell
+microshell
+/bin/cat: reserv_microsh.c: No such file or directory
+/bin/cat: reserv_microsh.c: No such file or directory
+/bin/cat: reserv_microsh.c: No such file or directory
+/bin/cat: reserv_microsh.c: No such file or directory
+/bin/cat: reserv_microsh.c: No such file or directory
+/bin/cat: reserv_microsh.c: No such file or directory
+/bin/cat: reserv_microsh.c: No such file or directory
+/bin/cat: reserv_microsh.c: No such file or directory
+/bin/cat: reserv_microsh.c: No such file or directory
+/bin/cat: reserv_microsh.c: No such file or directory
+/bin/cat: reserv_microsh.c: No such file or directory
+/bin/cat: reserv_microsh.c: No such file or directory
+error: cannot execute blah
+OK
+error: cannot execute blah
+OK
+error: cannot execute blah
+OK
+error: cd: bad arguments
+a.out
+finalexam
+microshell
+sourcexam
+test.sh
+----------------8<------------- END TEST ]

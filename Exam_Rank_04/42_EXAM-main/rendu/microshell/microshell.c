@@ -59,7 +59,7 @@ int	main(int argc, char *argv[], char *env[])
 				tmp_fd = dup(STDIN_FILENO);
 			}
 		}
-		else if(i != 0 && strcmp(argv[i], "|") == 0)
+		else if(i != 0 && strcmp(argv[i], "|") == 0) //pipe
 		{
 			pipe(fd);
 			if ( fork() == 0)
