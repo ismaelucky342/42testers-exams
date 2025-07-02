@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// funcion que 
+
 void	print_queens(int *board, int n)
 {
 	int	i;
