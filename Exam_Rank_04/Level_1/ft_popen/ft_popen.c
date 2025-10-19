@@ -3,52 +3,26 @@
 #include <stdlib.h>
 #include <sys/wait.h>
 
-int ft_popen(const char *file, char *const argv[], char type)
-{
-    //validar parámetros
-    if(!file || !argv || (type != 'r' && type != 'w'))
+int ft_popen(const char *file, char *const argv[], char type) {
+    int fd[2];
+    pid_t pid;
+
+    if (!file || !argv || (type != 'r' && type != 'w') || pipe(fd) == -1)
         return -1;
-    //crear pipe
-    int pipefd[2];
-    if(pipe(pipefd) == -1)
-        return -1;
-    //fork
-    pid_t pid = fork();
-    if(pid == -1)
-    {
-        close(pipefd[0]);
-        close(pipefd[1]);
+
+    if ((pid = fork()) == -1) {
+        close(fd[0]);
+        close(fd[1]);
         return -1;
     }
-    
-    //hijo
-
-    if(pid == 0)
-    {
-        if(type == 'r')
-        {
-            //si r, redirigir stdout al pipe
-            close(pipefd[0]);
-            dup2(pipefd[1], 1);
-            close(pipefd[1]);
-        } else {
-            // si w, redirigir stdin desde el pipe
-            close(pipefd[1]);
-            dup2(pipefd[0], 0);
-            close(pipefd[0]);
-        }
+    if (!pid) {
+        if (dup2(type == 'r' ? fd[1] : fd[0], type == 'r' ? STDOUT_FILENO : STDIN_FILENO) == -1)
+            exit(1);
+        close(fd[0]);
+        close(fd[1]);
         execvp(file, argv);
         exit(1);
     }
-
-    //proceso padre
-    if(type == 'r')
-    {
-        close(pipefd[1]);
-        return pipefd[0];
-    } else {
-        close(pipefd[0]);
-        return pipefd[1];
-    }
-   
-} 
+    close(type == 'r' ? fd[1] : fd[0]);
+    return type == 'r' ? fd[0] : fd[1];
+}
