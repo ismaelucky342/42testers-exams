@@ -2,7 +2,8 @@
 #include <stdlib.h>
 #include <sys/wait.h>
 
-int picoshell(char **cmds[]) {
+int picoshell(char **cmds[]) 
+{
     pid_t pid;                          // ID del proceso hijo
     int fd[2], last_fd = -1, i = 0;    // fd[2]: pipe actual, last_fd: lectura del pipe anterior, i: índice
 
